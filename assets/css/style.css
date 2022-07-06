@@ -111,7 +111,7 @@ html, body {
 
 /*for container*/
 .container {
-  height: 100%;
+  /* height: 100%; */
   background-color: #4393E5;
   color: #FFF;
 }
@@ -128,6 +128,7 @@ h1 {
 header .wrapper span {
   padding-top: 10px;
   display: block;
+  color: #97BFD5;
   font-size: 20px;
   text-align: center;
   text-transform: capitalize;
@@ -139,36 +140,116 @@ header .wrapper span {
 /*=================================
   main styling starts here
 =================================*/
+.water-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+/*styling for main water container start here*/
+.main-container {
+  width: 15%;
+  margin-top: 50px;
+  background-color: #FFF;
+  border: 5px solid #2E50C4;
+  border-bottom-right-radius: 45px;
+  border-bottom-left-radius: 45px;
+  color: #535EB9;
+}
 
+/*styling for empty jar start here*/
+.empty-jar {
+  height: 100%;
+  padding: 150px 0;
+  text-align: center;
+}
 
+.liters {
+  font-size: 25px;
+  text-transform: uppercase;
+}
 
+.empty-jar span {
+  margin-top: 5px;
+  display: block;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+/*styling for empty jar end here*/
 
+/*styling for full jar start here*/
+.full-jar {
+  height: 0;
+  background-color: #6AB4FA;
+  color: #4393E5;
+  font-size: 30px;
+}
+/*styling for full jar end here*/
+/*styling for main water container end here*/
 
+/*styling for sec water container start here*/
+.sec-container {
+  margin-top: 50px;
+}
 
+/*styling for sec container heading start here*/
+h3 {
+  padding-top: 10px;
+  color: #97BFD5;
+  font-size: 18px;
+}
 
+h3::first-letter {
+  text-transform: capitalize;
+}
+/*styling for sec container heading end here*/
+
+/*styling for glass list start here*/
+.glass-list {
+  margin: 15px 0 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.glass {
+  width: 15%;
+  margin: 10px 2%;
+  display: flex;
+  align-items: center;
+  background-color: #FFF;
+  border: 3px solid #2E50C4;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  color: #4393E5;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.glass-active {
+  background-color: #4393E5;
+  color: #FFF;
+}
+
+.glass span {
+  width: 100%;
+  padding: 40px 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+.line-break::before {
+  content: "\a";
+  white-space: pre;
+}
+/*styling for glass list end here*/
+/*styling for sec water container end here*/
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
+@media only screen and (max-width: 995px) {}  
