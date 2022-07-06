@@ -103,15 +103,35 @@ li {
   width: 86%; 
   margin: 0 auto;
 }
+
+/*fot html, body*/
+html, body {
+  height: 100%;
+}
+
+/*for container*/
+.container {
+  height: 100%;
+  background-color: #4393E5;
+  color: #FFF;
+}
 /*=================================
   Header styling starts here
 =================================*/
+h1 {
+  padding-top: 30px;
+  font-size: 35px;
+  text-align: center;
+  text-transform: capitalize;
+}
 
-
-
-
-
-
+header .wrapper span {
+  padding-top: 10px;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
 /*=================================
   Header styling ends here
 =================================*/  
