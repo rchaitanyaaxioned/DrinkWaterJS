@@ -3,25 +3,6 @@ var mainContainer = document.querySelector('.main-container');
 var emptyJar = document.querySelector(".empty-jar");
 var fullJar = document.querySelector(".full-jar");
 
-/*
-var mCHeight = mainContainer.offsetHeight;
-console.log("mCHeight : " + mCHeight);
-
-var eJHeight = emptyJar.offsetHeight;
-console.log("eJHeight : " + eJHeight);
-
-var fJHeight = fullJar.offsetHeight;
-console.log("fJHeight : " + fJHeight);
-
-var eJHeightP = (eJHeight / mCHeight) * 100;
-var emptyJarHeigth = eJHeightP.toFixed();
-console.log("emptyJarHeigth : " + emptyJarHeigth);
-
-var fJHeightP = (fJHeight / mCHeight) * 100;
-var fullJarHeigth = fJHeightP.toFixed();
-console.log("fullJarHeigth : " + fullJarHeigth);
-*/
-
 for (const glass of glasses) {
   glass.onclick = function () {
     glass.classList.toggle('glass-active');
@@ -41,9 +22,28 @@ function fillWater() {
     fullJar.style.height = setFJHeight + "%";
     console.log(setFJHeight + "%");
   }
-}*/
+}
+*/
 
+/*
+var mCHeight = mainContainer.offsetHeight;
+//361
+console.log("mCHeight : " + mCHeight); 
 
+var eJHeight = emptyJar.offsetHeight;
+console.log("eJHeight : " + eJHeight); //351
+
+var fJHeight = fullJar.offsetHeight;
+console.log("fJHeight : " + fJHeight); //0
+
+var eJHeightP = (eJHeight / mCHeight) * 100;
+var emptyJarHeigth = eJHeightP.toFixed(); //97
+console.log("emptyJarHeigth : " + emptyJarHeigth);
+
+var fJHeightP = (fJHeight / mCHeight) * 100;
+var fullJarHeigth = fJHeightP.toFixed(); //0
+console.log("fullJarHeigth : " + fullJarHeigth);
+*/
 
 /*
 function fillWater() {
